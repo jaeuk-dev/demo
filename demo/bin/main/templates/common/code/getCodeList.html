@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<dl th:each="code : ${codeList}">
+		<dt>idx</dt>
+		<dd th:text="${code.idx}"></dd>
+		
+		<dt>number</dt>
+		<dd th:text="${code.codeNumber}"></dd>
+		
+		<dt>name</dt>
+		<dd th:text="${code.codeName}"></dd>
+		
+		<dt>value</dt>
+		<dd th:text="${code.codeValue}"></dd>
+		
+		<dt>codeBigo</dt>
+		<dd th:text="${code.codeBigo}"></dd>
+	</dl>
+</body>
+</html>
